@@ -40,7 +40,7 @@ tar zxvf vfunction-workshop-aws-installation.tgz
 vim ~/vfunction-workshop/config/installation.yaml
 ```
 
-   1. Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the [Appendix for using AWS Migration Hub Refactor Spaces](/70_awsrefactorspaces/_index.aws.html), make sure that this service is available in the region you choose by searching Refactor Spaces in this region.
+   1. Set the region to which the resources will be deployed- you can use any US region, however, if you want to do the [Appendix for using AWS Migration Hub Refactor Spaces](/500_awsrefactorspaces.html), make sure that this service is available in the region you choose by searching Refactor Spaces in this region.
    
    2. Fill in your org_name (must be shorter than 50 chars) and email (e.g., "my company" as org_name and "myname@company.net" as email)
 
@@ -94,6 +94,6 @@ To login to the platform:
 
    ![vFunction Server](/images/vFunctionServer.png)
 
-You are now ready to proceed to Learning.
+You are now ready to proceed to the workshop.
 
 ![vFunction Logo](/images/vFunction.png)

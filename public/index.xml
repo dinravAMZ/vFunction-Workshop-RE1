@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vFunction Workshop on English</title>
+    <title>Microservice Deployment: vFunction Refactoring Engine for AWS Workshop on English</title>
     <link>/</link>
-    <description>Recent content in vFunction Workshop on English</description>
+    <description>Recent content in Microservice Deployment: vFunction Refactoring Engine for AWS Workshop on English</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Config Observation</title>
-      <link>/100_architectural-observability/40_observation/1_config_obs.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/40_observation/1_config_obs.html</guid>
-      <description>Setting up automatic observation of architectural changes Click on the OBSERVATION page. The first page (figure below) is used to configure which events should be triggered due to differences between the new measurement (auto learning) and the baseline. You can set the exclusivity threshold for the domain exclusivity event and you can enable to get mail and slack notifications when an automatic learning ends.
-Leave the Configure Alerts unchanged and click Configure Plan.</description>
-    </item>
-    
     <item>
       <title>Dev VM Content</title>
       <link>/200_refactoring-engine/210_servicecreation/1_dev_vm.html</link>
@@ -30,24 +20,17 @@ The folder c:\vFunctionLab\oms-tutorial\oms-services can be used as a reference 
     
     <item>
       <title>Importing measurements</title>
-      <link>/100_architectural-observability/30_analysis/1_import_baseline.html</link>
+      <link>/200_refactoring-engine/1_import_baseline.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/100_architectural-observability/30_analysis/1_import_baseline.html</guid>
-      <description>Importing the starting point measurement Every measurement may have different results following the Learning Phase, depending on the flows covered in the original application. Since this is a step-by-step tutorial, it is recommended to start by importing the measurement used for the analysis steps in this tutorial.
+      <guid>/200_refactoring-engine/1_import_baseline.html</guid>
+      <description>Importing the completed point measurement If you have not completed the AO workshop you can import the final measurement to proceed with the RE Workshop.
 Go to the vFunction Server Web UI
 Switch to the Analysis page
-Click MEASUREMENTS (bottom of the pane), select IMPORT MEASUREMENT and then CHOOSE FILE in the popup dialog</description>
-    </item>
-    
-    <item>
-      <title>Analysis page walkthrough</title>
-      <link>/100_architectural-observability/30_analysis/2_analysis_page.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/2_analysis_page.html</guid>
-      <description>Analysis page walkthrough Let&amp;rsquo;s walk through the analysis page and understand the basics.
-The center pane shows spheres representing the domains. The sphere&amp;rsquo;s size is proportional to the number of classes it includes. The color represents its exclusivity – the percentage of classes that are only used by the domain itself (exclusive to the domain). We will elaborate more on exclusivity later. The dashed arrows between spheres represent calls across domains.</description>
+Click MEASUREMENTS (bottom of the pane), select IMPORT MEASUREMENT and then CHOOSE FILE in the popup dialog
+In the Open file dialog, select C:\vFunctionLab\measurements\Analysis-Tutorial-Complete.zip and click Open
+Click IMPORT
+The initial measurement should load after a few seconds.</description>
     </item>
     
     <item>
@@ -58,28 +41,6 @@ The center pane shows spheres representing the domains. The sphere&amp;rsquo;s s
       <guid>/200_refactoring-engine/210_servicecreation/2_download_service_specs.html</guid>
       <description>Download the service specification files Open the Chrome web browser and go to the vFunction WebUI Analysis page. Select &amp;ldquo;Baseline 1&amp;rdquo; measurement (specified in the AO Tutorial)
 Mark InventoryController, OrderController and ProductController for extraction in the ANALYSIS page by going through each one, clicking the menu near the number next to the name (3 dots) and selecting SAVE. A tick-mark on the sphere indicates it is marked for extraction. Note that the common library is marked for extraction too.</description>
-    </item>
-    
-    <item>
-      <title>Reviewing the OMS Jars</title>
-      <link>/100_architectural-observability/30_analysis/2.1-oms_jars.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/2.1-oms_jars.html</guid>
-      <description>The OMS Jars You can view the various jar files of your application and their inter dependencies in vFunction. This allows you to determine if some of the jars of your application should be marked as infra jars.
-An infra jar is jar library which is part of the current application that will continue to be used as a library in the new architecture by the domains. Marking a jar as infra reduces the scope of the analysis and will result in dependencies from the domains build files to infra jars that are required by each of the domains.</description>
-    </item>
-    
-    <item>
-      <title>Update OMS</title>
-      <link>/100_architectural-observability/40_observation/2_update_app.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/40_observation/2_update_app.html</guid>
-      <description>Change the OMS Application In this section we will clone the OMS public git repo, switch to the updated branch and then configure and deploy the new version.
-The modified version of OMS adds managing customers.
-All the commands are done on the Linux machine, i.e., open PuTTY as you&amp;rsquo;ve done in the Setup Environment section and login to the Linux VM.
-Install git sudo yum install git Install maven sudo yum install maven Clone code repo and checkout ao-demo-1 branch cd ~ git clone https://workshop@bitbucket.</description>
     </item>
     
     <item>
@@ -95,30 +56,6 @@ git pull Go to the application folder cd oms-webmvc Compile using maven: mvn cle
     </item>
     
     <item>
-      <title>Order Controller</title>
-      <link>/100_architectural-observability/30_analysis/3_order_controller.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/3_order_controller.html</guid>
-      <description>Order Controller In this section, we will focus on the OrderController domain:
-Click on the OrderController domain on the right pane. The names of the domains are derived from the classes that own the end points through which clients access the domain. These endpoints are called entry points.
-The domain has three entry points. To review them, click EXPLORE TREE next to the Entry Points of the OrderController domain. On the left pane, you see the three endpoints.</description>
-    </item>
-    
-    <item>
-      <title>Scheduled Learning</title>
-      <link>/100_architectural-observability/40_observation/3_sched_learning.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/40_observation/3_sched_learning.html</guid>
-      <description>Simulating scheduled learning with the modified OMS app Go to the vFunction Web UI and open the Observation page
-Add a new schedule for learning
-Set the controller to oms-controller
-Set the Repeat and the Analysis schedule to daily
-Set the time slot to 5 min. before the current server time and 10 min. length (e.g., if the current server time is 2:00 PM, set it to 1:55 PM - 2:05 PM)</description>
-    </item>
-    
-    <item>
       <title>Common library</title>
       <link>/200_refactoring-engine/210_servicecreation/4_common_lib.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -130,32 +67,6 @@ The compilation should be successful.</description>
     </item>
     
     <item>
-      <title>Inventory Controller</title>
-      <link>/100_architectural-observability/30_analysis/4_inventory_controller.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/4_inventory_controller.html</guid>
-      <description>Inventory Controller Moving on to the InventoryController domain
-In the domains view of the analysis page, locate and open InventoryController
-Click VIEW next to Dynamic classes to review the dynamic analysis results. There are two exclusive classes and one non-exclusive class (InventoryService)
-Click on Details of the non-exclusive InventoryService class. You can see that ProductController is also using it.
-Scroll down in the Details popup and click on ProductService.getProductInventory(), the call tree will open as shown as below:</description>
-    </item>
-    
-    <item>
-      <title>Review Results</title>
-      <link>/100_architectural-observability/40_observation/4_review_results.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/40_observation/4_review_results.html</guid>
-      <description>Review scheduled learning and anlysis results Go to the vFunction Web UI and switch to the analysis page
-From the MEASUREMENT menu (bottom of page) SELECT the Scheduled measurement
-Click on the Bell icon at the top of the page to see the notifications - it should look like the following:
-Let&amp;rsquo;s review the notifications:
-Notification that the scheduled learning was done and the data was sent to analysis A new class was introduced to the common library: com.</description>
-    </item>
-    
-    <item>
       <title>Config Data Source</title>
       <link>/200_refactoring-engine/210_servicecreation/5_db_config.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -163,26 +74,6 @@ Notification that the scheduled learning was done and the data was sent to analy
       <guid>/200_refactoring-engine/210_servicecreation/5_db_config.html</guid>
       <description>Reconfiguring the services data source from Spring MVC to Spring Boot The original application is a Spring Web MVC application, using a MySQL database running in Tomcat via JNDI (Java Naming and Directory Interface). The configuration is specified in spring-config.xml (src/main/resources folder) of the original application.
 To switch from the JNDI based Spring MVC configuration to the Spring Boot configuration, we will need to do three steps for each of the services:</description>
-    </item>
-    
-    <item>
-      <title>Product Controller</title>
-      <link>/100_architectural-observability/30_analysis/5_product_controller.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/5_product_controller.html</guid>
-      <description>Product Controller Select the ProductController domain; notice that its sphere has an arrow pointing to the InventoryController domain because of the entry point we added in the previous section. Hovering over that line shows the method we marked as the new entry point. The Dynamic exclusivity of ProductController is already 100%.
-Let’s view the static analysis result as we did before. The two non-exclusive classes are ShippingRepository and ShippingService.</description>
-    </item>
-    
-    <item>
-      <title>Summary</title>
-      <link>/100_architectural-observability/40_observation/5_summary.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/40_observation/5_summary.html</guid>
-      <description>Summary We saw how to setup automatic learning and analysis to continuously observe and detect architectural drifts as the application is changing, and how to update the baseline following the architectural events.
-This concludes the AO Tutorial. If you are interested to learn about extracting services, continue to the RE Tutorial, if not, just skip to the Cleanup section.</description>
     </item>
     
     <item>
@@ -198,16 +89,6 @@ Add the annotation @EntityScan(basePackages = { &amp;quot;com.oms.entity&amp;quo
     </item>
     
     <item>
-      <title>Payment Domains</title>
-      <link>/100_architectural-observability/30_analysis/6_payment_services.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/6_payment_services.html</guid>
-      <description>Payment Domains Locate the two payment domains: PaymentService and DinersPaymentService. Looking at the spheres in the center pane, they are both being used by ModifyFulfillmentController.
-Both domains have 50% exclusivity and consist of two classes. The non-exclusive class, AbstractPaymentHttpClient, is shared by both (select one of the domains, click on VIEW next to Dynamic classes, go to the Non-exclusive class, and click Details to see the services that are using it)</description>
-    </item>
-    
-    <item>
       <title>Inventory Controller</title>
       <link>/200_refactoring-engine/210_servicecreation/7_inventory_controller.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -219,31 +100,6 @@ To set the service port (the default port 8080 has been taken by OrderController
     </item>
     
     <item>
-      <title>Other Services</title>
-      <link>/100_architectural-observability/30_analysis/7_shipping_price_modify_fulfillment_controllers.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/7_shipping_price_modify_fulfillment_controllers.html</guid>
-      <description>Shipping Price Controller and Modifying Fulfillment Controller Select the ShippingPriceController domain – its dynamic class exclusivity is 50%
-View the dynamic classes, the ShippingService is the non-exclusive class.
-Click DETAILS to see what other services use this class (ShippingService) – it is also used by ModifyFulfillmentOrder.
-In the pop-up, click on ModifyFulfillmentService.getShippingAmout() and move up the call tree to see the call tree as shown here:
-Modify Fulfillment Calltree Make ShippingService$$EnhancerBySpringCGLIB.</description>
-    </item>
-    
-    <item>
-      <title>&#34;main&#34; measrement</title>
-      <link>/100_architectural-observability/30_analysis/8_setting_main_measurement.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/8_setting_main_measurement.html</guid>
-      <description>Setting the measurement as &amp;ldquo;main&amp;rdquo; In the Analysis page, click MEASUREMENTS at the bottom and then click SELECT MEASUREMENT. You should see the list of measurements similar to the figure below
-Click on the Star inside the circle (left to the measurement name) to indicate that the current measurement is &amp;ldquo;main&amp;rdquo;. This tagging is useful when working with multiple measurements.
-Click outside the measurement list to close it
-Hover over the name of the measurement (top left of the page) and click the pencil icon</description>
-    </item>
-    
-    <item>
       <title>Product Controller</title>
       <link>/200_refactoring-engine/210_servicecreation/8_product_controller.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -252,16 +108,6 @@ Hover over the name of the measurement (top left of the page) and click the penc
       <description>Product Controller ProductController calls InventoryController to support requests such as finding the inventory according to the product description. Here we will show how to refactor the code to support service to service calls.
 Go to the ProductController project in Eclipse, and perform the steps described in section Config Data Source
 To set the service port (the default port 8080 has been taken by OrderController), open the application.properties file and add the property server.</description>
-    </item>
-    
-    <item>
-      <title>Summary</title>
-      <link>/100_architectural-observability/30_analysis/9_summary.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/100_architectural-observability/30_analysis/9_summary.html</guid>
-      <description>Summary We walked through the analysis flows to partition an application into domains, by configuring entry points, merging domains, setting classes as common/non-common/dead-code, and more.
-In the next part we will see how to setup detect and handle architectural drifts as changes are introduced to the application.</description>
     </item>
     
     <item>

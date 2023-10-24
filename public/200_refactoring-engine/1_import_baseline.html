@@ -9,7 +9,7 @@
 
     <link rel="icon" href="https://awsmedia.s3.amazonaws.com/favicon.ico" type="image/x-icon" />
 
-    <title>Service Creation :: English</title>
+    <title>Importing measurements :: English</title>
 
     
     <link href="/css/nucleus.css?1697800351" rel="stylesheet">
@@ -36,7 +36,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/200_refactoring-engine/210_servicecreation.html">
+  <body class="" data-url="/200_refactoring-engine/1_import_baseline.html">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -137,7 +137,7 @@
  
   
     
-      <li data-nav-id="/200_refactoring-engine/1_import_baseline.html" title="Importing measurements" class="dd-item ">
+      <li data-nav-id="/200_refactoring-engine/1_import_baseline.html" title="Importing measurements" class="dd-item active">
         <a href="/200_refactoring-engine/1_import_baseline.html">
         Importing measurements
         <i class="fas fa-check read-icon"></i>
@@ -160,7 +160,7 @@
     
     <li data-nav-id="/200_refactoring-engine/210_servicecreation.html" title="Service Creation" class="dd-item
         
-        active
+        
         
         ">
       <a href="/200_refactoring-engine/210_servicecreation.html">
@@ -528,7 +528,7 @@
             
           
           
-            <a href='/'>Microservice Deployment: vFunction Refactoring Engine for AWS Workshop</a> > <a href='/200_refactoring-engine.html'>RE Tutorial</a> > Service Creation
+            <a href='/'>Microservice Deployment: vFunction Refactoring Engine for AWS Workshop</a> > <a href='/200_refactoring-engine.html'>RE Tutorial</a> > Importing measurements
           
         
           
@@ -554,25 +554,38 @@
         
 
 
-
-	<p><img src="/images/vFunction.png" alt="vFunction Logo"></p>
-<h1 id="service-creation">Service Creation</h1>
-<p>In this part of the lab, you will create the services identified in the analysis, refactor them and perform basic testing.</p>
-<p>You will extract three services: OrderController, InventoryController and ProductController, compile and test them.</p>
-<p>This section is done on the <strong>workshop-win</strong> VM: The Windows VM which servers as the Development Machine. This machine has the source code as well as the necessary software components such as Java 8, Eclipse and Postman.</p>
-<p>You can refer to the following video to see all the steps in this section:</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/_vqsnnMiqvU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
+<p><img src="/images/vFunction.png" alt="vFunction Logo"></p>
+<h3 id="importing-the-completed-point-measurement">Importing the completed point measurement</h3>
+<p>If you have not completed the AO workshop you can import the final measurement to proceed with the RE Workshop.</p>
+<ol>
+<li>
+<p>Go to the vFunction Server Web UI</p>
+</li>
+<li>
+<p>Switch to the Analysis page</p>
+</li>
+<li>
+<p>Click MEASUREMENTS (bottom of the pane), select IMPORT MEASUREMENT and then CHOOSE FILE in the popup dialog</p>
+</li>
+<li>
+<p>In the Open file dialog, select <strong>C:\vFunctionLab\measurements\Analysis-Tutorial-Complete.zip</strong> and click Open</p>
+</li>
+<li>
+<p>Click IMPORT</p>
+<p>The initial measurement should load after a few seconds.</p>
+<p><img src="/images/OMS-Analysis-1.png" alt="Initial OMS Analysis"></p>
+</li>
+<li>
+<p>Click on the bell shaped icon at the top of the page to see the notifications - you should have a notification that the learning results include beans and database tables.</p>
+</li>
+<li>
+<p>Click <em>Configure Parameters</em> under ACTIONS in the left pane, and ensure the checkmark <em>Enable Auto Refactoring</em> is checked (turned on)</p>
+</li>
+</ol>
 <p><img src="/images/vFunction.png" alt="vFunction Logo"></p>
 
 
-
-
-
-<footer class=" footline" >
+<footer class="footline">
 	
 </footer>
 
@@ -643,6 +656,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -659,6 +673,8 @@
             
                 
                     
+                        
+                        
                     
                 
                 
@@ -672,9 +688,6 @@
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -878,10 +891,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/200_refactoring-engine/1_import_baseline.html" title="Importing measurements"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/200_refactoring-engine.html" title="RE Tutorial"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/200_refactoring-engine/210_servicecreation/1_dev_vm.html" title="Dev VM Content" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/200_refactoring-engine/210_servicecreation.html" title="Service Creation" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -913,3 +926,4 @@
 
   </body>
 </html>
+

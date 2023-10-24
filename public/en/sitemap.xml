@@ -2,13 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/100_architectural-observability/40_observation/1_config_obs.html</loc>
-  </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/1_dev_vm.html</loc>
   </url><url>
-    <loc>/100_architectural-observability/30_analysis/1_import_baseline.html</loc>
-  </url><url>
-    <loc>/200_refactoring-engine/210_servicecreation.html</loc>
+    <loc>/200_refactoring-engine/1_import_baseline.html</loc>
   </url><url>
     <loc>/</loc>
     <xhtml:link
@@ -22,59 +18,27 @@
                 href="/"
                 />
   </url><url>
-    <loc>/100_architectural-observability/30_analysis/2_analysis_page.html</loc>
+    <loc>/200_refactoring-engine/210_servicecreation.html</loc>
   </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/2_download_service_specs.html</loc>
   </url><url>
-    <loc>/100_architectural-observability/30_analysis/2.1-oms_jars.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/40_observation/2_update_app.html</loc>
-  </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/3_code_copy.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/30_analysis/3_order_controller.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/40_observation/3_sched_learning.html</loc>
   </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/4_common_lib.html</loc>
   </url><url>
-    <loc>/100_architectural-observability/30_analysis/4_inventory_controller.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/40_observation/4_review_results.html</loc>
-  </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/5_db_config.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/30_analysis/5_product_controller.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/40_observation/5_summary.html</loc>
   </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/6_order_controller.html</loc>
   </url><url>
-    <loc>/100_architectural-observability/30_analysis/6_payment_services.html</loc>
-  </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/7_inventory_controller.html</loc>
   </url><url>
-    <loc>/100_architectural-observability/30_analysis/7_shipping_price_modify_fulfillment_controllers.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/30_analysis/8_setting_main_measurement.html</loc>
-  </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/8_product_controller.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/30_analysis/9_summary.html</loc>
   </url><url>
     <loc>/200_refactoring-engine/210_servicecreation/9_summary.html</loc>
   </url><url>
     <loc>/10_setup.html</loc>
   </url><url>
-    <loc>/100_architectural-observability.html</loc>
-  </url><url>
     <loc>/200_refactoring-engine.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/20_learning.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/30_analysis.html</loc>
-  </url><url>
-    <loc>/100_architectural-observability/40_observation.html</loc>
   </url><url>
     <loc>/200_refactoring-engine/220_deployment.html</loc>
   </url><url>

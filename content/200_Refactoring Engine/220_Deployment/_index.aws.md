@@ -10,7 +10,7 @@ weight: 220
 
 This section is an optional/advanced section intended for people with DevOps experience. 
 
-Also, you should skip ths section if you haven't set **use_refactoring** to true in [Setup Environment](/10_setup/_index.aws.html) section.
+Also, you should skip ths section if you haven't set **use_refactoring** to true in [Setup Environment](/10_setup.html) section.
 
 After having working services, you can optionally deploy them to a micro-services environment such as a Kubernetes cluster or cloud service.
 

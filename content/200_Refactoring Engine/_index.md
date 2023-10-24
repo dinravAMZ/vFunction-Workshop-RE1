@@ -9,8 +9,8 @@ weight: 100
 # Refactoring Engine (RE) Tutorial
 
 {{% notice note %}}
-Please complete the [Setup Environment](/10_setup/_index.aws.html) section before starting the tutorial
-and don't forget to [Cleanup](/300_cleanup/_index.aws.html) when you're done with the workshop
+Please complete the [Setup Environment](/10_setup.html) section before starting the tutorial
+and don't forget to [Cleanup](/300_cleanup.html) when you're done with the workshop
 {{% /notice %}}
 
 This is a hands-on tutorial for the vFunction Refacotring Engine (RE) module.
@@ -18,6 +18,8 @@ This is a hands-on tutorial for the vFunction Refacotring Engine (RE) module.
 We will use the Order Management System (OMS) demo application with the measurement done in the AO Tutorial to show how to create services from domain specifications defined in the AO module.
 
 **We assume this tutorial is done after completing the AO Tutorial**
+
+If you have not completed the AO Tutorial Import the completed measurment first.
 
 ### Learning Objectives
 
