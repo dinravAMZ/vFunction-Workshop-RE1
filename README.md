@@ -1,4 +1,4 @@
-# vFunction AO Workshop
+# vFunction RE Workshop
 
 This workshop is based on the AWSworkshop.io base workshop using the Hugo framework
 
