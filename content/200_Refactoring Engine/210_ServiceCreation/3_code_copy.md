@@ -11,20 +11,28 @@ weight: 3
 The code-copy application relies on the local maven repo to generate the required maven / gradle dependencies. To ensure the local repo is updated, compile the original application so the necessary used libraries will be downloaded from maven central.
 
 1. Open a command prompt and cd to ```c:\vFunctionLab\oms-tutorial```
-   
-2. Pull the latest version from the public git repository:
+
+2. Checkout the mysql branch
+
+```
+git checkout mysql
+```
+
+Note: If the git is not connected, rename the oms-tutorial folder and clone the public repository ```git clone https://ws@bitbucket.org/vfunction/oms-tutorial.git``` and then checkout mysql branch
+
+3. Pull the latest version from the public git repository:
 
 ```
 git pull
 ```
 
-3. Go to the application folder
+4. Go to the application folder
 
 ```
 cd oms-webmvc
 ```
 
-4. Compile using maven: 
+5. Compile using maven: 
 ```
 mvn clean install
 ```

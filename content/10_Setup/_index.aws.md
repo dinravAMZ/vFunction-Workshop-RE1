@@ -27,6 +27,7 @@ The below diagram depicts the AWS services provisioned the workshop installation
 ```bash
 curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/8fd0038d28ae8681eb3a066438c5991e/3a9feb11-824f-4b00-a4f0-cdda56c7a48c/vfunction-workshop-aws-installation.tgz
 ```
+
 4. Unpack the installation package
 
 ```bash

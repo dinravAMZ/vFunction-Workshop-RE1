@@ -33,6 +33,8 @@ weight: 2
 
 4. Close the Service Configuration dialog and download all service specifications to *C:\vFunctionLab\service-specs* files by clicking DOWNLOAD. Then, download the code-copy tool to the same folder as the specification files (click on the link in the *Extract your first service* dialog)
 
+5. Download the legacy code-copy utility (as we are using an old java version) from '''http://[vfunctionserver]/downloads/vfunction-tools/windows/code-copy.exe''' (replace with vFunction server IP) and download to the same folder as the specification files.
+
 {{% notice note %}}
 The browser might be configured not to prompt for a folder when downloading files. In that case, locate the destination folder by doing "Show in Folder" on one of the downloaded files and then copy the files to *C:\vFunctionLab\service-specs*. Note that code-copy.exe should also be in the same folder as the .json files.
 </p>
