@@ -48,19 +48,19 @@ You will now use the code-copy application, downloaded with the specification fi
 3. Run the following commands:
 
     ``` text
-    code-copy -spec CommonLibrary.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\common
+    java -jar code-copy.jar -spec CommonLibrary.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\common
     ```
 
     ``` text
-    code-copy -spec OrderController.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\order-controller
+    java -jar code-copy.jar -spec OrderController.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\order-controller
     ```
 
     ``` text
-    code-copy -spec InventoryController.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\inventory-controller
+    java -jar code-copy.jar -spec InventoryController.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\inventory-controller
     ```
 
     ``` text
-    code-copy -spec ProductController.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\product-controller
+    java -jar code-copy.jar -spec ProductController.json -source ..\oms-tutorial\oms-webmvc -dest ..\oms-services\product-controller
     ```
 
 ### Run Spotless to cleanup the code
