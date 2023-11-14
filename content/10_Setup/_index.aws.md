@@ -25,7 +25,7 @@ The below diagram depicts the AWS services provisioned the workshop installation
 3. Download the workshop installation package from the vFunction portal using the command:
 
 ```bash
-curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/8fd0038d28ae8681eb3a066438c5991e/3a9feb11-824f-4b00-a4f0-cdda56c7a48c/vfunction-workshop-aws-installation.tgz
+curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/file/2265236af5b0e6563c813dd3756e4ce8/02a4ee02-c7cf-4b21-a560-48f428b1a521/vfunction-workshop-aws-installation.tgz
 ```
 
 4. Unpack the installation package
