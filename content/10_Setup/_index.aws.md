@@ -12,7 +12,7 @@ In this section, you will create and deploy the necessary AWS services required 
 package.
 
 The below diagram depicts the AWS services provisioned the workshop installation package and their usage (the xxx in the names represent a variable string):
-
+vFunction-Workshop-RE1
 ![Workshop Environment](/images/Workshop-Environment-AWS-TF.png)
 
 
