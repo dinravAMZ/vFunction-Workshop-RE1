@@ -34,6 +34,55 @@ curl -o vfunction-workshop-aws-installation.tgz https://portal.vfunction.com/fil
 tar zxvf vfunction-workshop-aws-installation.tgz
 ```
 
+{{% notice tip %}}
+<p style='text-align: left;'>
+
+If deploying the workshop into a corporate account with security policies restricting ingress access, you can remove the auto created ingress rules from the terraform template. Remember to add your own rules to RDP to the Windows EC2 instance.
+</p>
+{{% /notice %}}
+
+Optional remove ingress secuirty groups:
+``` 
+vi vfunction-workshop/terraform/aws/module.tf
+```
+
+Optional remove:
+
+``` XML
+ingress_with_cidr_blocks = [
+    {
+        from_port   = 8080
+        to_port     = 8080
+        protocol    = "tcp"
+        cidr_blocks = "0.0.0.0/0"
+    },
+    {
+        from_port   = 22
+        to_port     = 22
+        protocol    = "tcp"
+        cidr_blocks = "0.0.0.0/0"
+    }
+]
+
+ingress_with_cidr_blocks = [
+    {
+        from_port   = 3389
+        to_port     = 3389
+        protocol    = "tcp"
+        cidr_blocks = "0.0.0.0/0"
+    },
+    {
+        from_port   = 22
+        to_port     = 22
+        protocol    = "tcp"
+        cidr_blocks = "0.0.0.0/0"
+    }
+]
+```
+
+
+
+
 5. Edit the file ./config/installation.yaml file:
 
 ```bash
